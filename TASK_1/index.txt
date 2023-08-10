@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyStream - Dive into Ocean of Movies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Light Blue */
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-image: linear-gradient(to right, #4682b4, #87cefa); /* Gradient from Steel Blue to Light Blue */
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .hero {
+            background-image: url('marvel-posters-ranked.jpg'); /* Replace with your ocean-themed hero image path */
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: #fff;
+            text-shadow: 2px 2px #000;
+            max-width: 600px;
+            text-align: center;
+            margin: 0 auto;
+            animation: fadeIn 2s ease; /* Fade-in animation */
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background-image: linear-gradient(to right, #4682b4, #87cefa); /* Gradient for the CTA button */
+            color: #fff;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            margin-top: 1rem;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Add transform to include the scale effect on hover */
+            font-size: 24px;
+        }
+
+        .cta-btn:hover {
+            background-image: linear-gradient(to right, #87cefa, #4682b4); /* Gradient on hover */
+            transform: scale(1.1); /* Slight scale effect on hover */
+        }
+
+        .features {
+            background-color: #fff;
+            text-align: center;
+            padding: 2rem;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            margin: 1rem;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            flex: 1 1 300px;
+            max-width: 300px;
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: scale(1.05) translateY(-10px); /* Scale and lift on hover */
+        }
+
+        .feature h2 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .feature p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        footer {
+            background-image: linear-gradient(to right, #4682b4, #87cefa); /* Gradient for the footer */
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* SVG Illustrations */
+        .illustration {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        /* Sample Illustration 1 */
+        .illustration-1:hover {
+            transform: scale(1.2) rotateZ(-10deg) translateY(-10px);
+        }
+
+        /* Sample Illustration 2 */
+        .illustration-2:hover {
+            transform: scale(1.2) rotateZ(10deg) translateY(-10px);
+        }
+
+        /* Sample Illustration 3 */
+        .illustration-3:hover {
+            transform: scale(1.2) rotateZ(-5deg) translateY(-10px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MyStream</h1>
+        <p>Dive into Ocean of Movies</p>
+    </header>
+
+    <div class="hero">
+        <h1>Discover a World of Movies</h1>
+        <a href="#" class="cta-btn">Get Started</a>
+    </div>
+
+    <div class="features">
+        <div class="feature">
+            <h2>Unlimited Movie Collection</h2>
+            <img class="illustration illustration-1" src="iron.jpg" alt="Movie Illustration 1">
+            <p>Access a vast library of movies in various genres.</p>
+        </div>
+        <div class="feature">
+            <h2>High-Quality Streaming</h2>
+            <img class="illustration illustration-2" src="c.jpg" alt="Movie Illustration 2">
+            <p>Enjoy movies in high-definition with smooth streaming.</p>
+        </div>
+        <div class="feature">
+            <h2>Watch Anywhere</h2>
+            <img class="illustration illustration-3" src="ab.jpg" alt="Movie Illustration 3">
+            <p>Stream on your computer, tablet, or smartphone.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 MyStream. All rights reserved.</p>
+    </footer>
+</body>
+</html>
