@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: 	#7fff7f; /* Light Grey */
+    color: #ffffff; /* White */
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ff6b6b; /* Watermelon Pink */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff; /* White */
+    font-family: 'Pacifico', cursive;
+}
+
+.input-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff9f9f; /* Light Watermelon Pink */
+    color: #ffffff; /* White */
+    transition: background-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    background-color: #ffbdbd; /* Lighter Watermelon Pink */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #45cc93; /* Greenish Watermelon */
+    border: none;
+    border-radius: 20px;
+    color: #ffffff; /* White */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #35b383; /* Darker Greenish Watermelon */
+}
+
+.tasks-section h2,
+.completed-section h2 {
+    color: #ffffff; /* White */
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: #ffffff; /* White */
+    background-color: #ff9f9f; /* Light Watermelon Pink */
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.card.completed {
+    text-decoration: line-through;
+    background-color: #ff6b6b; /* Watermelon Pink */
+    opacity: 0.6;
+}
+
+.card:hover {
+    background-color: #ffa5a5; /* Slightly Darker Watermelon Pink */
+}
